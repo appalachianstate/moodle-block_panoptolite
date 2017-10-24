@@ -1,0 +1,91 @@
+/* This file is part of Moodle - http://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+
+ * block_panoptolite
+ *
+ * @author      Fred Woolard <woolardfa@appstate.edu>
+ * @copyright   (c) 2017 Appalachian State Universtiy, Boone, NC
+ * @license     GNU General Public License version 3
+ * @package     block_panoptolite
+ */
+
+.block_panoptolite .footer {
+    margin-top: 1.5rem;
+    text-align: right;
+}
+
+.block_panoptolite .block_tree {
+    display: block;
+	min-height: 120px;
+}
+
+.block_panoptolite .block_tree [aria-hidden="true"] {
+    display: none;
+}
+
+.block_panoptolite .block_tree ul[role="group"] {
+	padding: 0;
+}
+
+.block_panoptolite .block_tree.loading {
+    background-image: url('[[pix:i/loading]]');
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.block_panoptolite .block_tree .tree_item {
+    cursor: pointer;
+    padding-left: 0;
+    margin: 5px 0;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    word-wrap: break-word;
+}
+
+.block_panoptolite .block_tree .tree_item[aria-expanded="true"] {
+    background-image: url('[[pix:t/expanded]]');
+}
+
+.block_panoptolite .block_tree .tree_item[aria-expanded="false"] {
+    background-image: url('[[pix:t/collapsed]]');
+}
+
+.block_panoptolite .block_tree .tree_item.emptybranch[aria-expanded="true"] {
+    background-image: url('[[pix:t/collapsed_empty]]');
+}
+
+.block_panoptolite .block_tree .tree_item.branch {
+    padding-left: 18px;
+    margin-left: 0;
+}
+
+.block_panoptolite .block_tree .depth_2:last-child {
+    padding-bottom: 13px;
+}
+
+.block_panoptolite .block_tree .depth_2 p.hasicon {
+    text-indent: -21px;
+    padding-left: 21px;
+    margin-top: 18px;	
+	margin-bottom: 5px;
+}
+
+.block_panoptolite .block_tree .depth_2 p.hasicon img {
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    margin-right: 5px;
+    vertical-align: top;
+}
